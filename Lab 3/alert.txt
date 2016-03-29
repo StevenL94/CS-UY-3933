@@ -1,0 +1,45 @@
+################################################################
+The detailed alert report
+################################################################
+
+[**] [1:25042:3] EXPLOIT-KIT Java User-Agent downloading Portable Executable - Possible exploit kit [**]
+[Classification: A Network Trojan was detected] [Priority: 1] 
+03/16-08:50:54.901880 59.53.91.102:80 -> 192.168.23.129:1067
+TCP TTL:128 TOS:0x0 ID:371 IpLen:20 DgmLen:16932 DF
+***A**** Seq: 0x7BDA5466  Ack: 0x56F4B43  Win: 0xFAF0  TcpLen: 20
+[Xref => http://malware.dontneedcoffee.com/2012/11/cve-2012-5076-massively-adopted.html][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-5076]
+
+[**] [1:25042:3] EXPLOIT-KIT Java User-Agent downloading Portable Executable - Possible exploit kit [**]
+[Classification: A Network Trojan was detected] [Priority: 1] 
+03/16-08:50:50.702668 59.53.91.102:80 -> 192.168.23.129:1066
+TCP TTL:128 TOS:0x0 ID:380 IpLen:20 DgmLen:17560 DF
+***A**** Seq: 0x2908299D  Ack: 0xEB81D38D  Win: 0xFAF0  TcpLen: 20
+[Xref => http://malware.dontneedcoffee.com/2012/11/cve-2012-5076-massively-adopted.html][Xref => http://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-5076]
+
+[**] [1:16669:5] MALWARE-CNC Spyeye bot variant outbound connection [**]
+[Classification: A Network Trojan was detected] [Priority: 1] 
+03/16-08:51:05.397195 192.168.23.129:1069 -> 212.252.32.20:80
+TCP TTL:128 TOS:0x0 ID:221 IpLen:20 DgmLen:291
+***A**** Seq: 0xC6100DB0  Ack: 0x595D1660  Win: 0xFAF0  TcpLen: 20
+[Xref => http://www.threatexpert.com/report.aspx?md5=84714c100d2dfc88629531f6456b8276]
+
+
+############################################################
+Output when using the -A fast option
+############################################################
+
+03/16-08:50:54.901880  [**] [1:25042:3] EXPLOIT-KIT Java User-Agent downloading Portable Executable - Possible exploit kit [**] [Classification: A Network Trojan was detected] [Priority: 1] {TCP} 59.53.91.102:80 -> 192.168.23.129:1067
+03/16-08:50:50.702668  [**] [1:25042:3] EXPLOIT-KIT Java User-Agent downloading Portable Executable - Possible exploit kit [**] [Classification: A Network Trojan was detected] [Priority: 1] {TCP} 59.53.91.102:80 -> 192.168.23.129:1066
+03/16-08:51:05.397195  [**] [1:16669:5] MALWARE-CNC Spyeye bot variant outbound connection [**] [Classification: A Network Trojan was detected] [Priority: 1] {TCP} 192.168.23.129:1069 -> 212.252.32.20:80
+
+
+###################################################################
+Output when using the -A test option: this gives the corresponding packet number
+###################################################################
+
+155	1	25042	3	
+183	1	25042	3	
+294	1	16669	5	
+
+
+
